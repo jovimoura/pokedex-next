@@ -2,7 +2,8 @@ module.exports = {
   reacStrictMode: true,
   images: {
     domains: [
-      'cdn.traction.one'
+      'cdn.traction.one',
+      'api.github.com'
     ]
   }
 }
