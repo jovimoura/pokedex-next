@@ -1,0 +1,13 @@
+.back {
+  font-size: 1.7rem;
+  margin: 1rem;
+  color: #DBDBDB;
+  text-decoration: none;
+  transform: .5 linear;
+  margin-left: 10rem;
+}
+
+.back:hover {
+  text-decoration: underline;
+  color: #212121;
+}

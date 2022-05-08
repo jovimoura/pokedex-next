@@ -1,0 +1,13 @@
+.link {
+  font-size: 1.7rem;
+  margin: 1rem;
+  color: #212121;
+  text-decoration: none;
+  transform: .5 linear;
+  text-transform: capitalize;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #212121;
+}
