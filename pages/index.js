@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import { useState } from 'react'
-import debounce from 'lodash.debounce'
-import Pokemon from '../components/Pokemon'
+import MainPokemons from '../components/MainPokemons'
+import useDebounce from '../hooks/useDebounce'
 
 export async function getStaticProps() {  
-  const maxPokes = 301
+  const maxPokes = 500
   const api = 'https://pokeapi.co/api/v2/pokemon/'
   const res = await fetch(`${api}/?limit=${maxPokes}`)
   const data = await res.json()
@@ -22,8 +22,7 @@ export async function getStaticProps() {
 
 export default function Home({ pokemons }) {
   const [ inputSearch, setInputSearch ] = useState('')
-
-  // const debounceChange = debounce(handleChange, 1000)
+  const debouncedInput = useDebounce(inputSearch, 500)
 
   return (
     <>
@@ -38,18 +37,12 @@ export default function Home({ pokemons }) {
             style={{ width: '50%', padding: '1rem 3rem', border: '1px solid rgb(219, 219, 219)', borderRadius: '15px', fontSize:  '1.5rem', boxShadow: 'rgb(0 0 0 / 30%) 0px 3px 5px' }} 
             type="text" 
             placeholder='Search pokemon...'
-            onChange={debounceChange} 
+            onChange={e => setInputSearch(e.target.value)} 
             value={inputSearch}
           />
         </div>
-        <main style={{  }}>
-          <div>
-            <ul style={{ display: 'flex', flexWrap: 'wrap' ,listStyle: 'none', }}>
-              { pokemons.map((item, i) => (
-                <li key={i}><Pokemon search={inputSearch} pokemon={item}/></li>
-              )) }
-            </ul>
-          </div>
+        <main>
+          <MainPokemons pokemons={pokemons} pokemonName={debouncedInput}/>
         </main>
       </div>
     </>
