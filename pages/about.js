@@ -1,16 +1,35 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
-const AboutPage = ({ avatar }) => {
+const AboutPage = () => {
+  
+  useEffect(
+    () => AOS.init({ duration: 1000 }),
+    []
+  )
+
   return (
-    <div style={{ display: "flex", marginLeft: "10rem", marginTop: "4rem", padding: '2rem' }}>
+    <div
+      data-aos="fade-up"
+      style={{
+        display: 'flex',
+        marginLeft: '10rem',
+        marginTop: '4rem',
+        padding: '2rem'
+      }}
+    >
       <Head>
         <title>About</title>
+        <link rel="shortcut icon" href="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-pokeball-video-games-those-icons-lineal-color-those-icons.png" type="image/x-icon" />
       </Head>
       <div className="image">
         <Image src="/images/foto-de-perfil.png" width="220px" height="300px" />
       </div>
-      <div className="text" style={{ padding: "2rem" }}>
+      <div className="text" style={{ padding: '2rem' }}>
         <div className="eng">
           <p className="br">
             🇺🇸 Hi!
@@ -18,7 +37,7 @@ const AboutPage = ({ avatar }) => {
               src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
               width="28px"
               height="28px"
-            ></img>{" "}
+            ></img>{' '}
             My name is João.
           </p>
           <p>
@@ -26,15 +45,18 @@ const AboutPage = ({ avatar }) => {
             longtime fan of the anime and old franchise games!
           </p>
           <p>
-          I hope you liked this project and if you want to see others
-            my projects, access my{" "}
-            <a href="jovimoura.github.io/portfolio/">Portfolio</a> or my 
-            {' '}<a href="https://github.com/jovimoura">Github</a> perfil.
+            I hope you liked this project and if you want to see others of my
+            projects, access my{' '}
+              <a target='_blank' href="https://jovimoura.github.io/portfolio/">Portfolio</a> {' '}
+ 
+            or my{' '}
+              <a target='_blank' href="https://github.com/jovimoura">Github</a>
+            {' '}perfil.
           </p>
         </div>
         <div className="pt">
           <p className="br">
-            🇧🇷 Oi, meu nome é João{" "}
+            🇧🇷 Oi, meu nome é João{' '}
             <img
               src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
               width="28px"
@@ -48,21 +70,25 @@ const AboutPage = ({ avatar }) => {
           </p>
           <p>
             Espero que tenham gostado desse projeto e se quiser ver outros
-            projetos meus, acesse meu{" "}
-            <a href="jovimoura.github.io/portfolio/">Portfólio</a> ou meu perfil
-            do <a href="https://github.com/jovimoura">Github</a>.
+            projetos meus, acesse meu{' '}
+            <a target="_blank" href="https://jovimoura.github.io/portfolio/">Portfólio</a> ou meu perfil
+            do{' '}
+            <a href="https://github.com/jovimoura" target="_blank">
+              Github
+            </a>
+            .
           </p>
         </div>
       </div>
     </div>
-  );
-};
-
-export async function getServerSideProps() {
-  await new Promise((resolve) => {
-    setTimeout(resolve, 500);
-  });
-  return { props: {} };
+  )
 }
 
-export default AboutPage;
+export async function getServerSideProps() {
+  await new Promise(resolve => {
+    setTimeout(resolve, 500)
+  })
+  return { props: {} }
+}
+
+export default AboutPage

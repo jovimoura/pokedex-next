@@ -7,6 +7,21 @@
   font-family: 'Exo', sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;       /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255,0,0,1);    /* color of the scroll thumb */
+  border-radius: 15px;       /* roundness of the scroll thumb */
+  border: 1px solid transparent;  /* creates padding around scroll thumb */
+}
+
+
 p {
   font-weight: 400;
   font-size: 1rem;

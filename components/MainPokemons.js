@@ -1,10 +1,10 @@
-import Pokemon from "./Pokemon"
+import Pokemon from './Pokemon'
 
 export default function MainPokemons({ pokemons, pokemonName }) {
   const pokemonsFiltered = pokemons.filter(item => item.name === pokemonName)
 
   const getPokemons = () => {
-    if (pokemonName === "") {
+    if (pokemonName === '') {
       return pokemons.map((item, i) => (
         <li key={i}>
           <Pokemon pokemon={item} />
@@ -21,7 +21,7 @@ export default function MainPokemons({ pokemons, pokemonName }) {
 
   return (
     <div>
-      <ul style={{ display: "flex", flexWrap: "wrap", listStyle: "none" }}>
+      <ul style={{ display: 'flex', flexWrap: 'wrap', listStyle: 'none' }}>
         {getPokemons()}
       </ul>
     </div>

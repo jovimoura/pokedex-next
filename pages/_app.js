@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter()
 
   useEffect(() => {
-    const handleStart = (url) => {
+    const handleStart = url => {
       console.log(`Loading: ${url}`)
       NProgress.start()
     }
@@ -33,7 +33,6 @@ export default function App({ Component, pageProps }) {
       <MainContainer>
         <Component {...pageProps} />
       </MainContainer>
-      
     </>
   )
 }
