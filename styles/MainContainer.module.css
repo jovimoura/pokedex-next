@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+}
+
+.header {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .main {
+    display: block;
+  }
+}

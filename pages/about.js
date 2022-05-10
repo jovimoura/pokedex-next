@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
+import style from '../styles/About.module.css'
 
 const AboutPage = () => {
   
@@ -15,21 +15,16 @@ const AboutPage = () => {
   return (
     <div
       data-aos="fade-up"
-      style={{
-        display: 'flex',
-        marginLeft: '10rem',
-        marginTop: '4rem',
-        padding: '2rem'
-      }}
+      className={style.main}
     >
       <Head>
         <title>About</title>
         <link rel="shortcut icon" href="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-pokeball-video-games-those-icons-lineal-color-those-icons.png" type="image/x-icon" />
       </Head>
-      <div className="image">
+      <div className={style.image}>
         <Image src="/images/foto-de-perfil.png" width="220px" height="300px" />
       </div>
-      <div className="text" style={{ padding: '2rem' }}>
+      <div className={style.text}>
         <div className="eng">
           <p className="br">
             🇺🇸 Hi!

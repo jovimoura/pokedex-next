@@ -4,6 +4,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import MainPokemons from '../components/MainPokemons'
 import useDebounce from '../hooks/useDebounce'
+import style from '../styles/Index.module.css'
 
 export async function getStaticProps() {
   const maxPokes = 411
@@ -39,7 +40,7 @@ export default function Home({ pokemons }) {
         <meta name="description" content="Pokedex desenvolvida com Next.js" />
         <link rel="shortcut icon" href="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-pokeball-video-games-those-icons-lineal-color-those-icons.png" type="image/x-icon" />
       </Head>
-      <div data-aos="fade-up" style={{ padding: '2rem 1rem', flexGrow: 1, marginLeft: '10rem' }}>
+      <div data-aos="fade-up" className={style.main}>
         <div
           style={{
             display: 'flex',
@@ -50,14 +51,7 @@ export default function Home({ pokemons }) {
           }}
         >
           <input
-            style={{
-              width: '50%',
-              padding: '1rem 3rem',
-              border: '1px solid rgb(219, 219, 219)',
-              borderRadius: '15px',
-              fontSize: '1.5rem',
-              boxShadow: 'rgb(0 0 0 / 30%) 0px 3px 5px'
-            }}
+            className={style.search}
             type="text"
             placeholder="Search pokemon..."
             onChange={e => setInputSearch(e.target.value)}

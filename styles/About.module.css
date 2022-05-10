@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  margin-left: 10rem;
+  margin-top: 4rem;
+  padding: 2rem
+}
+
+.text {
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: block;
+    margin-left: 0;
+  }
+
+  .text {
+    padding: 0;
+  }
+}

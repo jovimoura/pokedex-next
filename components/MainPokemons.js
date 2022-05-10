@@ -21,7 +21,7 @@ export default function MainPokemons({ pokemons, pokemonName }) {
 
   return (
     <div>
-      <ul style={{ display: 'flex', flexWrap: 'wrap', listStyle: 'none' }}>
+      <ul style={{ display: 'flex', flexWrap: 'wrap', listStyle: 'none', justifyContent: 'center' }}>
         {getPokemons()}
       </ul>
     </div>

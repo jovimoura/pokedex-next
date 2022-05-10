@@ -41,59 +41,60 @@ export default function Pokemon({ pokemon }) {
   const stats = pokemon.stats
   const types = pokemon.types
 
-  useEffect(
-    () => AOS.init({ duration: 1000 }),
-    []
-  )
+  useEffect(() => AOS.init({ duration: 1000 }), [])
 
   function changeColor() {
-    if (types[0].type.name === 'fire') {
-      setTypeColor('#f54f4f')
-    }
-    if (types[0].type.name === 'grass') {
-      setTypeColor('#49D0B0')
-    }
-    if (types[0].type.name === 'water') {
-      setTypeColor('#76BEFE')
-    }
-    if (types[0].type.name === 'electric') {
-      setTypeColor('#FCC719')
-    }
-    if (types[0].type.name === 'dragon') {
-      setTypeColor('#f1a541')
-    }
-    if (types[0].type.name === 'poison') {
-      setTypeColor('#BA68C8')
-    }
-    if (types[0].type.name === 'normal') {
-      setTypeColor('#FFD289')
-    }
-    if (types[0].type.name === 'bug') {
-      setTypeColor('#77B28C')
-    }
-    if (types[0].type.name === 'ground') {
-      setTypeColor('#C5A48A')
-    }
-    if (types[0].type.name === 'rock') {
-      setTypeColor('#A27035')
-    }
-    if (types[0].type.name === 'fighting') {
-      setTypeColor('#F44E3F')
-    }
-    if (types[0].type.name === 'fairy') {
-      setTypeColor('#F9D4BB')
-    }
-    if (types[0].type.name === 'ice') {
-      setTypeColor('#AEECEF')
-    }
-    if (types[0].type.name === 'psychic') {
-      setTypeColor('#EEC8E0')
-    }
-    if (types[0].type.name === 'steel') {
-      setTypeColor('#C1B4AE')
-    }
-    if (types[0].type.name === 'dark') {
-      setTypeColor('#71677C')
+    switch (types[0].type.name) {
+      case 'fire':
+        setTypeColor('#f54f4f')
+        break
+      case 'grass':
+        setTypeColor('#49D0B0')
+        break
+      case 'water':
+        setTypeColor('#76BEFE')
+        break
+      case 'electric':
+        setTypeColor('#FCC719')
+        break
+      case 'dragon':
+        setTypeColor('#f1a541')
+        break
+      case 'poison':
+        setTypeColor('#BA68C8')
+        break
+      case 'normal':
+        setTypeColor('#FFD289')
+        break
+      case 'bug':
+        setTypeColor('#77B28C')
+        break
+      case 'ground':
+        setTypeColor('#C5A48A')
+        break
+      case 'rock':
+        setTypeColor('#A27035')
+        break
+      case 'fighting':
+        setTypeColor('#F44E3F')
+        break
+      case 'fairy':
+        setTypeColor('#F9D4BB')
+        break
+      case 'ice':
+        setTypeColor('#AEECEF')
+        break
+      case 'psychic':
+        setTypeColor('#EEC8E0')
+        break
+      case 'steel':
+        setTypeColor('#C1B4AE')
+        break
+      case 'dark':
+        setTypeColor('#71677C')
+        break
+      default:
+        break
     }
   }
 
@@ -107,7 +108,11 @@ export default function Pokemon({ pokemon }) {
     <>
       <Head>
         <title>{capitalize(pokemon.name)}</title>
-        <link rel="shortcut icon" href={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`} type="image/x-icon" />
+        <link
+          rel="shortcut icon"
+          href={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
+          type="image/x-icon"
+        />
       </Head>
       <Link href="/">
         <a className={styles.back}>Back</a>
@@ -118,8 +123,7 @@ export default function Pokemon({ pokemon }) {
           display: 'flex',
           justifyContent: 'center',
           flexGrow: 1,
-          marginTop: '2rem',
-          marginBottom: '2rem'
+          margin: '1rem'
         }}
       >
         <div
