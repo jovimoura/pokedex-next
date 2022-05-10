@@ -23,13 +23,13 @@
 # 🇧🇷 A aplicação está on-line no link: 
 
 ```
-exemplo link
+https://pokedex-next-flax.vercel.app/
 ```
 
 # 🇺🇸 The application is online at the link: 
 
 ```
-exemplo link
+https://pokedex-next-flax.vercel.app/
 ```
 
 ## 🇺🇸 If you want to analyze the project on your machine, follow this step by step: 😁
@@ -45,7 +45,7 @@ git clone https://github.com/jovimoura/pokedex-next
 ### Access the folder🤓
 
 ```
-cd <nome-da-pasta>
+cd <folder>
 ```
 ### Install dependencies🤠
 ```
