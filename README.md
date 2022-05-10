@@ -92,19 +92,23 @@ http://localhost:3000/
 
 ## 🇺🇸 Image 💻
 
-<img style="width: 600px; height: 300px" src="rota">
+<img style="width: 600px; height: 250px" src="./public/images/screenshots/print.png">
+
+<br/>
 
 ## Responsive design 📱
 
-<img src='rota'>
+<img src='./public/images/screenshots/responsive-print.jpeg' style='width: 250px; height: 400px'>
 
 ## 🇧🇷 Imagem do projeto 💻
 
-<img style="width: 600px; height: 300px" src="rota">
+<img style="width: 600px; height: 250px" src="./public/images/screenshots/print.png">
+
+<br/>
 
 ## Imagem do design responsivo 📱
 
-<img src='rota'>
+<img src='./public/images/screenshots/responsive-print.jpeg' style='width: 250px; height: 400px'>
 
 ##  🇺🇸 Tecnologies🦉
 
