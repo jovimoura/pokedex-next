@@ -35,7 +35,7 @@ export default function Home({ pokemons }) {
   return (
     <>
       <Head>
-        <title>Início</title>
+        <title>Home</title>
         <meta name="keywords" content="Pokemons" />
         <meta name="description" content="Pokedex desenvolvida com Next.js" />
         <link rel="shortcut icon" href="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-pokeball-video-games-those-icons-lineal-color-those-icons.png" type="image/x-icon" />
