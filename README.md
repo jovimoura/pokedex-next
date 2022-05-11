@@ -20,21 +20,18 @@
 
 
 
-# 🇧🇷 A aplicação está on-line no link: 
+# 🇧🇷 A aplicação está on-line no link. 🇺🇸 The application is online at the link:
+
 
 ```
 https://pokedex-next-flax.vercel.app/
 ```
 
-# 🇺🇸 The application is online at the link: 
-
-```
-https://pokedex-next-flax.vercel.app/
-```
-
-## 🇺🇸 If you want to analyze the project on your machine, follow this step by step: 😁
+## 🇺🇸 If you want to analyze the project on your machine, follow this step by step. 🇧🇷 Caso você queira analisar o projeto em sua máquina, siga este passo a passo: 😁
 
 <br>
+
+## 🇺🇸
 
 ### Clone😎
 
@@ -61,9 +58,9 @@ npm run serve
 http://localhost:3000/
 ```
 
-## 🇧🇷 Caso você queira analisar o projeto em sua máquina, siga este passo a passo: 😁
-
 <br>
+
+## 🇧🇷
 
 ### Clone o repositório😎
 
@@ -90,7 +87,7 @@ npm run serve
 http://localhost:3000/
 ```
 
-## 🇺🇸 Image 💻
+## 🇺🇸 Image | 🇧🇷 Imagem do projeto  💻
 
 <img style="width: 600px; height: 250px" src="./public/images/screenshots/print.png">
 
@@ -100,28 +97,13 @@ http://localhost:3000/
 
 <img src='./public/images/screenshots/responsive-print.jpeg' style='width: 250px; height: 400px'>
 
-## 🇧🇷 Imagem do projeto 💻
-
-<img style="width: 600px; height: 250px" src="./public/images/screenshots/print.png">
-
-<br/>
-
-## Imagem do design responsivo 📱
-
-<img src='./public/images/screenshots/responsive-print.jpeg' style='width: 250px; height: 400px'>
-
-##  🇺🇸 Tecnologies🦉
+##  🇺🇸 Tecnologies and Libs | 🇧🇷 Tecnologias e Bibliotecas utilizadas🦉
 
 <ul>
     <li>Next.JS</li>
+    <li>React</li>
     <li>JavaScript</li>
-</ul>
-
-## 🇧🇷 Tecnologias utilizadas🦉
-
-<ul>
-    <li>Next.JS</li>
-    <li>JavaScript</li>
+    <li>AOS</li>
 </ul>
 
 ##  🇧🇷 Feito por / 🇺🇸 Made by:
