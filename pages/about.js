@@ -45,7 +45,7 @@ const AboutPage = () => {
               <a target='_blank' href="https://jovimoura.github.io/portfolio/">Portfolio</a> {' '}
  
             or my{' '}
-              <a target='_blank' href="https://github.com/jovimoura">Github</a>
+              <a target='_blank' href="https://portfolio-jovimoura.vercel.app/">Github</a>
             {' '}perfil.
           </p>
         </div>
@@ -66,7 +66,7 @@ const AboutPage = () => {
           <p>
             Espero que tenham gostado desse projeto e se quiser ver outros
             projetos meus, acesse meu{' '}
-            <a target="_blank" href="https://jovimoura.github.io/portfolio/">Portfólio</a> ou meu perfil
+            <a target="_blank" href="https://portfolio-jovimoura.vercel.app/">Portfólio</a> ou meu perfil
             do{' '}
             <a href="https://github.com/jovimoura" target="_blank">
               Github
