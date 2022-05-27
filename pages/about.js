@@ -42,10 +42,10 @@ const AboutPage = () => {
           <p>
             I hope you liked this project and if you want to see others of my
             projects, access my{' '}
-              <a target='_blank' href="https://jovimoura.github.io/portfolio/">Portfolio</a> {' '}
+              <a target='_blank' href="https://portfolio-jovimoura.vercel.app/">Portfolio</a> {' '}
  
             or my{' '}
-              <a target='_blank' href="https://portfolio-jovimoura.vercel.app/">Github</a>
+              <a target='_blank' href="https://github.com/jovimoura">Github</a>
             {' '}perfil.
           </p>
         </div>
