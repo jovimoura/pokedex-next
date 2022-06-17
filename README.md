@@ -89,7 +89,7 @@ http://localhost:3000/
 
 ## 🇺🇸 Image | 🇧🇷 Imagem do projeto  💻
 
-<img style="width: 600px; height: 250px" src="./public/images/screenshots/print.png">
+<img style="width: 600px; height: 350px" src="./public/images/screenshots/print.png">
 
 <br/>
 
