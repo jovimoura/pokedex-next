@@ -1,34 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700;800;900&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Exo', sans-serif;
-  box-sizing: border-box;
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+  @apply min-h-screen;
+  transition: 0.5s;
+  @apply transition-colors;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Gotham', sans-serif;
 }
 
-body::-webkit-scrollbar {
-  width: 12px;       /* width of the entire scrollbar */
+html.sr .load-hidden {
+  visibility: hidden;
 }
 
-body::-webkit-scrollbar-track {
-  background: transparent;        /* color of the tracking area */
-}
+@layer base {
+  ::-webkit-scrollbar {
+    @apply hidden md:block w-1;
+  }
 
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(255,0,0,1);    /* color of the scroll thumb */
-  border-radius: 15px;       /* roundness of the scroll thumb */
-  border: 1px solid transparent;  /* creates padding around scroll thumb */
-}
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-900 rounded;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    @apply bg-red-900 rounded;
+  }
 
-p {
-  font-weight: 400;
-  font-size: 1rem;
-  text-decoration: none;
-}
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-red-700;
+  }
 
-ul {
-  list-style: none;
+  ::selection {
+    @apply text-white bg-red-600;
+  }
 }

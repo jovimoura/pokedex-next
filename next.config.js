@@ -1,9 +1,12 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
-  reacStrictMode: true,
+  reactStrictMode: true,
   images: {
     domains: [
       'cdn.traction.one',
-      'api.github.com'
+      'api.github.com',
+      'avatars.githubusercontent.com',
+      'media.giphy.com'
     ]
   }
 }
