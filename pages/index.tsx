@@ -49,7 +49,7 @@ const Home: NextPage = ({ pokemons }: any) => {
       <InputSearch
         className="bg-transparent focus:outline-none w-4/5 dark:text-gray-50 dark:placeholder:text-gray-50"
         onChange={e => setSearch(e.target.value)}
-        placeholder="search pokemon..."
+        placeholder="search pokemon"
       />
       {pokemons.length > 0 ? (
         <Pokemons pokemons={pokemons} pokemonName={search} />
