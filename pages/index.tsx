@@ -60,9 +60,9 @@ const Home: NextPage = ({ pokemons }: any) => {
       <h1 className='text-3xl font-semibold text-gray-200 italic my-5 leading-5'>
         Search your favorite...
       </h1>
-      <div className='w-full flex items-end justify-center gap-5 flex-col md:flex-row'>
+      <div className='w-full flex px-10 md:p-0 items-center md:items-end justify-center gap-5 flex-col md:flex-row'>
         <Input
-          className='bg-transparent focus:outline-none w-2/5 dark:text-gray-50 placeholder:text-gray-300 dark:placeholder:text-gray-50'
+          className='bg-transparent focus:outline-none w-full md:w-2/5 dark:text-gray-50 placeholder:text-gray-300 dark:placeholder:text-gray-50'
           onChange={(e) => setSearch(e.target.value)}
           placeholder='Name'
         />
@@ -75,7 +75,7 @@ const Home: NextPage = ({ pokemons }: any) => {
             { name: "100", value: "100" },
           ]}
           label='Pokemons per page'
-          className='w-1/4'
+          className='w-full md:w-1/4'
         />
       </div>
       {currentCards.length > 0 ? (
