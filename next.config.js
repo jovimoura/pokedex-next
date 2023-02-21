@@ -6,7 +6,8 @@ module.exports = {
       'cdn.traction.one',
       'api.github.com',
       'avatars.githubusercontent.com',
-      'media.giphy.com'
+      'media.giphy.com',
+      'raw.githubusercontent.com'
     ]
   }
 }

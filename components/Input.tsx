@@ -1,17 +1,18 @@
-import { MagnifyingGlass } from 'phosphor-react'
-import { InputHTMLAttributes } from 'react'
+import { MagnifyingGlass } from "phosphor-react";
+import { InputHTMLAttributes } from "react";
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  value?: any
-  onChange?: (e: any) => void
-  icon?: any
+interface Props extends InputHTMLAttributes<HTMLInputElement> {
+  className?: string;
 }
 
-export const InputSearch = ({ value, onChange, ...rest }: InputProps) => {
+export const Input = ({ className, ...rest }: Props) => {
   return (
-    <div className="flex my-5 justify-start items-center border-b-2 border-red-600 dark:border-transparent dark:bg-gray-400 w-2/4 h-12 py-2.5 pl-2 gap-2">
-      <MagnifyingGlass className="w-6 h-6" />
-      <input value={value} onChange={onChange} {...rest} />
-    </div>
-  )
-}
+    <input
+      type='text'
+      className={`w-full appearance-none border-b border-b-red-600 px-3 py-2 text-gray-900 placeholder-gray-500 focus:border-red-700 focus:outline-none focus:ring-red-600 sm:text-sm dark:placeholder:text-gray-100 ${
+        className ?? ""
+      }`}
+      {...rest}
+    />
+  );
+};
